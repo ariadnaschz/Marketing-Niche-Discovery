@@ -1,21 +1,14 @@
-# Marketing-Campaign-Analysis
-Proyecto integral de análisis de datos sobre el rendimiento de campañas de marketing, que incluye limpieza de datos, análisis exploratorio de datos (EDA), análisis de funcionalidades y recomendaciones comerciales utilizando Python y herramientas de inteligencia empresarial (BI).
+🎯 Marketing Niche Discovery & Budget Optimization
+📌 El Problema de Negocio
+La empresa está experimentando una fuga de capital (alto Costo por Adquisición - CPA) debido a la asignación tradicional del presupuesto de marketing. Se asume erróneamente que los canales con mayor volumen de gasto generan la mayor rentabilidad, ignorando la fatiga de anuncios y la saturación del segmento.
 
-📊 Performance general
-¿Cuál es el ROI por campaña?
-¿Qué campañas generan más conversiones?
-¿Estamos gastando de más en campañas poco efectivas?
+🚀 Objetivo del Proyecto
+Identificar "Nichos Ocultos" (cruces específicos de Canal + Segmento de Cliente) que actualmente reciben baja inversión pero presentan un CPA mínimo y una alta tasa de conversión. El objetivo final es proponer una reasignación de presupuesto que incremente el Revenue estimado sin aumentar el gasto global.
 
-💰 Eficiencia de inversión
-¿Qué canal tiene mejor rendimiento? (Google, Facebook, etc.)
-¿Cuál tiene mejor relación Costo vs Conversión?
-¿Dónde deberíamos invertir más presupuesto?
+🛠️ Stack Tecnológico
+Python (Pandas, Numpy): Limpieza, simulación de reglas de negocio y Análisis Exploratorio de Datos (EDA).
 
-👥 Comportamiento del usuario
-¿Qué tipo de audiencia convierte más?
-¿Hay diferencias por edad, región o dispositivo?
+Power BI: Modelado de datos, DAX y visualización interactiva para toma de decisiones.
 
-📈 Optimización
-¿Qué campañas deberían pausarse?
-¿Cuáles escalar?
-¿Qué estrategia recomendarías?
+📊 Hallazgos Clave y Recomendaciones
+(En construcción - Se llenará tras finalizar el análisis en Power BI)
