@@ -16,6 +16,8 @@ def simulate_niche_scenario(input_path, output_path):
     np.random.seed(42) # Para que siempre nos dé la misma historia
     print("Inyectando reglas de negocio...")
     
+    # Creando un escenario con reglas de negocio para simular un nicho específico:
+
     # 1. Regla Base de Conversión dependiente del CTR
     df['Conversion_Rate'] = (df['Conversion_Rate'].fillna(0.02) * 0.5) + (ctr * 0.4) + np.random.normal(0, 0.01, len(df))
     
@@ -28,7 +30,7 @@ def simulate_niche_scenario(input_path, output_path):
     # 3. LA MINA DE ORO OCULTA (El Nicho)
     # 'Tech Enthusiasts' a través de 'Email' es baratísimo y convierte brutal, pero gastamos poco ahí
     mask_gold_mine = (df['Channel_Used'] == 'Email') & (df['Customer_Segment'] == 'Tech Enthusiasts')
-    df.loc[mask_gold_mine, 'Acquisition_Cost'] *= 0.4 # Costos bajísimos
+    df.loc[mask_gold_mine, 'Acquisition_Cost'] *= 0.4 # Costos bajos
     df.loc[mask_gold_mine, 'Conversion_Rate'] *= 1.5  # Alta conversión
     
     # Limitar el Conversion Rate a niveles realistas (1% a 25%)
@@ -60,13 +62,11 @@ def simulate_niche_scenario(input_path, output_path):
 
 # Ejecución
 if __name__ == "__main__":
-    # 1. Obtenemos la ruta exacta de la carpeta donde está guardado este script (la carpeta 'scripts')
+    # Obtenemos la ruta del proyecto de forma dinámica
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    
-    # 2. Subimos un nivel para llegar a la raíz de tu proyecto
     project_root = os.path.dirname(script_dir)
     
-    # 3. Construimos las rutas dinámicamente hacia tus carpetas de datos
+    # Construimos las rutas de entrada y salida
     data_dir = os.path.join(project_root, "Data")
     input_file = os.path.join(data_dir, "marketing_campaign_dataset.csv")
     output_file = os.path.join(data_dir, "marketing_simulated_niche.csv")
@@ -74,9 +74,9 @@ if __name__ == "__main__":
     if not os.path.exists(input_file):
         raise FileNotFoundError(f"No se encontró el archivo de entrada: {input_file}")
 
-    # 4. Si la carpeta de salida no existe, la creamos automáticamente
+    # Aseguramos que el directorio de salida exista
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     
-    # 5. Ejecutamos la simulación
+    # Imprimimos la ruta de lectura para verificar que es correcta
     print(f"Ruta de lectura: {input_file}")
     simulate_niche_scenario(input_file, output_file)
