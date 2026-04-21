@@ -51,3 +51,6 @@ Mediante un análisis de correlación y detección de ineficiencias, el proyecto
 * Impacto Propuesto: La reasignación táctica de tan solo el 15% del capital en riesgo hacia el nicho descubierto proyecta una reducción drástica del CPA global y una multiplicación del Revenue, sin requerir incremento en el presupuesto total de marketing.
 
 (Nota: El análisis visual e interactivo de estos hallazgos se encuentra en el Dashboard de Power BI adjunto en este repositorio).
+
+## 🖥️ Dashboard Ejecutivo (Propuesta de Reasignación)
+![Dashboard de Optimización](URL_DE_TU_IMAGEN_EN_GITHUB)
