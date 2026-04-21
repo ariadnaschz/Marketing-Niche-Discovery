@@ -53,4 +53,4 @@ Mediante un análisis de correlación y detección de ineficiencias, el proyecto
 (Nota: El análisis visual e interactivo de estos hallazgos se encuentra en el Dashboard de Power BI adjunto en este repositorio).
 
 ## 🖥️ Dashboard Ejecutivo (Propuesta de Reasignación)
-![Dashboard de Optimización](URL_DE_TU_IMAGEN_EN_GITHUB)
+![Dashboard de Optimización](https://github.com/ariadnaschz/Marketing-Niche-Discovery/blob/main/Imagenes/dashboard_niche_discovery.png?raw=true)
