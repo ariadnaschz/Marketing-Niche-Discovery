@@ -10,11 +10,11 @@ marketing-niche-discovery/
 │   └── marketing_simulated_niche.csv
 │
 ├── notebooks/
-│   ├── 01_data_audit.ipynb         # EDA inicial 
-│   └── 02_niche_discovery.ipynb    # EDA final
+│   ├── 01_data_audit.ipynb         
+│   └── 02_niche_discovery.ipynb    
 │
 ├── scripts/
-│   └── data_simulator.py          # El script que inyecta las reglas de negocio
+│   └── data_simulator.py         
 │
 └── README.md
 ```
